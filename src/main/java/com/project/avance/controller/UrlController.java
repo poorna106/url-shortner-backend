@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@RestController
-@CrossOrigin(origins = "https://localhost:3000")
+@RestController("/api")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UrlController {
 
     @Autowired

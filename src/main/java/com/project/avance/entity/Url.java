@@ -1,18 +1,20 @@
 package com.project.avance.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @Entity
+@Table(name = "url")
 public class Url {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @JsonProperty(value="inputurl")
     private String inputUrl;
+    @JsonProperty(value="outputurl")
     private String outputUrl;
 
     public Url(int id, String inputUrl, String outputUrl) {

@@ -1,6 +1,6 @@
-package com.project.avance.urlshortnerbackend;
-
+package com.project.avance;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
